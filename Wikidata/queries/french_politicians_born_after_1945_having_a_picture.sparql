@@ -1,0 +1,15 @@
+# Example of filtering result for a country, France in this case
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?politician ?politicianDescription ?image ?politicianLabel ?date_of_birth WHERE {
+  ?politician wdt:P106 wd:Q82955.
+  ?politician wdt:P27 wd:Q142.
+  ?politician wdt:P18 ?image.
+  ?politician wdt:P569 ?date_of_birth.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  FILTER(?date_of_birth > "1945-01-01T00:00:00Z"^^xsd:dateTime)
+}
+ORDER BY ?politician
+
+
