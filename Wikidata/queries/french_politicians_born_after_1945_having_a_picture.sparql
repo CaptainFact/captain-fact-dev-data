@@ -10,6 +10,5 @@ SELECT ?politician ?politicianDescription ?image ?politicianLabel ?date_of_birth
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
   FILTER(?date_of_birth > "1945-01-01T00:00:00Z"^^xsd:dateTime)
 }
-ORDER BY ?politician
 
 
