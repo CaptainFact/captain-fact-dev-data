@@ -1,6 +1,6 @@
 # CaptainFact Data
 
-This repo in intended to share [CaptainFact](https://captainfact.io) public data.
+This repo is intended to share some of [CaptainFact](https://captainfact.io) data.
 
 
 ## Structure
