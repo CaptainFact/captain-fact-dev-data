@@ -10,7 +10,7 @@ to get started quickly.
 
 ### Wikidata
 
-Contains all the data extracted from Wikidata via wikidata. The `.sparql`
+Contains all the data extracted from Wikidata via the [Wikidata Query Service](https://query.wikidata.org/) API. The `.sparql`
 files are provided too so you can make your own requests on
 [Wikidata Query Service](https://query.wikidata.org/).
 
